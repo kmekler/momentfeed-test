@@ -1,0 +1,21 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<script type="text/javascript" src="instafeed.min.js"></script>
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+	    	target: 'instagram',
+	        get: 'user',
+	        userId: 'kirbymekler',
+	        clientId: [CLIENT_ID],
+	        accessToken: [ACCESS_TOKEN],
+            template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+	    });
+	    feed.run();
+	</script>
+</head>
+<title>Mekler MomentFeed Test</title>
+<body>
+	<div id="instagram"></div>
+</body>
+</html>
